@@ -1,0 +1,34 @@
+﻿@page
+@model CreateModel
+
+<h2>Create Member</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Member.Name"></label>
+        <input asp-for="Member.Name" class="form-control" />
+        <span asp-validation-for="Member.Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Member.Phone"></label>
+        <input asp-for="Member.Phone" class="form-control" />
+        <span asp-validation-for="Member.Phone" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Member.Tel"></label>
+        <input asp-for="Member.Tel" class="form-control" />
+        <span asp-validation-for="Member.Tel" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Member.Gender"></label>
+        <input asp-for="Member.Gender" class="form-control" />
+        <span asp-validation-for="Member.Gender" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Member.Birthday"></label>
+        <input asp-for="Member.Birthday" class="form-control" />
+        <span asp-validation-for="Member.Birthday" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a asp-page="./Index" class="btn btn-secondary">Cancel</a>
+</form>
